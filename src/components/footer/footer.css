@@ -1,0 +1,92 @@
+.foot{
+    border-top: 2px solid #40916c;
+    margin-top: 1.5em;
+}
+
+.verweise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    padding: 2em;
+}
+
+.socialMediaIcons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Kontakt{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.Rechtliches{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.socialMedia{
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconsFrom{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+img{
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+@media (min-width: 800px){
+    img:hover{
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    .verweise{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Rechtliches{
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .socialMedia{
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconsFrom{
+        padding-top: 2em;
+        padding-bottom: 3em;
+    }
+    img{
+        height: 4em;
+        width: 4em;
+        padding: 1em;
+    }
+    .Kontakt p{
+        padding-left: 1em;
+        padding-right: 1em;
+            }
+    .Kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
