@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./footer.css";
 import Mail from '../../icons/icons8-neuer-beitrag-50.png';
 import Insta from '../../icons/icons8-instagram-50.png';
@@ -7,29 +7,44 @@ import Print from '../../icons/icons8-pinterest-50.png';
 
 
 const Footer = () => {
+    const [open, setOpen] = useState(false);
     return (
         <div className='foot'>
             <div className='verweise'>
                 <div className='Kontakt'>
-                    <div>
-                        <p>
+                    <details>
+                        <summary>
                             Kontakt
+                        </summary>
+                        <p>
+                            Name
                         </p>
-                        <a href='mailto:kontakt@mpech.dev'>
+                    </details>
+                    <a href='mailto:kontakt@mpech.dev'>
                             <img alt='Mailsymbol' src={Mail}/>
-                        </a>
-                    </div>
+                    </a>
                 </div>
                 <div className='Rechtliches'>
-                    <p>
-                        Impressum
-                    </p>
-                    <p>
-                        Datenschutzerklärung
-                    </p>
-                    <p>
-                        Rechtliche Hinweise
-                    </p>
+                    <div className='impressum'>
+                        <div>
+                            Impressum
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                    <div className='datenschutz'>
+                        <div>
+                            Datenschutz
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
                 </div>
                 <div className='socialMedia'>
                     <p>Folgen uns auf</p>

@@ -1,19 +1,23 @@
+.socialMediaIcons{
+    display: flex;
+    justify-content: space-between;
+}
+
 .foot{
-    border-top: 2px solid #40916c;
-    margin-top: 1.5em;
+    border-top: 2px solid #293228;
+    margin-top: 2em;
+}
+
+.Rechtliches p{
+    font-size: small;
 }
 
 .verweise{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4em;
+    height: 6em;
     padding: 2em;
-}
-
-.socialMediaIcons{
-    display: flex;
-    justify-content: space-between;
 }
 
 .Kontakt{
@@ -21,9 +25,22 @@
     padding-right: 1em;
 }
 
+.Kontakt:hover{
+    color: #455443;
+}
+
+.Rechtliches .impressum:hover{
+    color: #455443;
+}
+
+.Rechtliches .datenschutz:hover{
+    color: #455443;
+}
+
 .Rechtliches{
-    padding-left: 1em;
-    padding-right: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .socialMedia{
@@ -45,25 +62,60 @@ img{
     padding: 0.5em;
 }
 
-@media (min-width: 800px){
+a:hover{
+    color: #455443;
+}
+
+a {
+    text-decoration: none;
+    color: #293228;
+}
+
+@media (min-width: 900px){
     img:hover{
         width: 3em;
         height: 3em;
     }
+    .Rechtliches .impressum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-right: 3em;
+    }
+
+    .Rechtliches .datenschutz{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .verweise{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .Kontakt p{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .Kontakt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .Rechtliches{
         padding-top: 2em;
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 80%;
     }
+
     .socialMedia{
         padding-top: 2em;
         display: flex;
@@ -78,15 +130,5 @@ img{
         height: 4em;
         width: 4em;
         padding: 1em;
-    }
-    .Kontakt p{
-        padding-left: 1em;
-        padding-right: 1em;
-            }
-    .Kontakt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 }
