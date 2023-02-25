@@ -1,0 +1,25 @@
+.homeText{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+}
+
+.textFrom{
+    padding-top: 3em;
+    font-size: small;
+}
+
+@media (min-width: 800px){
+    .homeText{
+        max-width: 65%;
+        padding-left: 8em;
+        margin-bottom: 15em;
+    }
+}
+
+.wikiText{
+    padding-bottom: 1em;
+}
+
+
+

@@ -1,0 +1,36 @@
+.tableCO2{
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4em;
+}
+
+@media (max-width: 900px){
+    .tableCO2{
+
+    }
+}
+
+.tableCO2 h2{
+    text-align: center;
+    padding: 1em;
+}
+
+table, th, td{
+    border: 1px solid #293228;
+}
+
+th{
+    padding: 1em;
+    background-color: #E9EFEB;
+}
+
+td{
+    padding: 1em;
+}
+
+.pagination {
+    text-align: center;
+    padding-top: 1em;
+}
