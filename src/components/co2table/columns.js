@@ -12,7 +12,7 @@ const rows = [{"Company":"Huaneng Power International", "Land": "Volksrepublik C
     {"Company": "Gazprom", "Land": "Russland", "Consumptions_in_tons": 110.940},
     {"Company": "Saudi Electronic", "Land": "Saudi- Arabien", "Consumptions_in_tons": 108.590},
     {"Company": "RWE", "Land": "Deutschland", "Consumptions_in_tons": 107.290},
-    {"Company": "Enel", "Land": "Italien", "Consumptions_in_tons": 107.290}
+    {"Companies": "Enel", "Land": "Italien", "Consumptions_in_tons": 107.290},
 ]
 
 export default rows

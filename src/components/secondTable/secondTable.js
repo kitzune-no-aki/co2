@@ -1,11 +1,11 @@
 import { useState, useMemo } from 'react'
 import { sortRows, filterRows, paginateRows } from './helpers'
-import { Pagination } from './Pagination'
-import './table.css'
+import Pagination  from './Pagination2'
+import './table2.css'
 import BurgerNav from "../navbar/navbar";
 import Footer from "../footer/footer";
 
-const Co2Table = ({ columns, rows }) => {
+const Co2TableCountry = ({ columns, rows }) => {
     const [activePage, setActivePage] = useState(1)
     const [filters, setFilters] = useState({})
     const [sort, setSort] = useState({ order: 'asc', orderBy: 'id' })
@@ -133,4 +133,4 @@ const Co2Table = ({ columns, rows }) => {
     )
 }
 
-export default Co2Table
+export default Co2TableCountry

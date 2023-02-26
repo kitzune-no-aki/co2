@@ -30,7 +30,8 @@ const BurgerNav = () => {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/Co2Table">Table</Link></li>
+                    <li><Link to="/Co2Table">Table Concerns</Link></li>
+                    <li><Link to="/Co2TableCountry">Table Countries</Link></li>
                     <li className='country' onClick={changeText}>{active? 'Europe' : 'Asia'}</li>
                 </ul>
                 <div className='hamburger' onClick={handleClick}>
