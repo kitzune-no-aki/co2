@@ -32,7 +32,7 @@ export function convertDateString(value) {
 
 export function toLower(value) {
     if (isString(value)) {
-        return value.toLowerCase()
+        return value.toLowerCase().replace('<', '')
     }
     return value
 }

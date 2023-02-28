@@ -5,6 +5,7 @@ import './table.css'
 import BurgerNav from "../navbar/navbar";
 import Footer from "../footer/footer";
 
+
 const Co2Table = ({ columns, rows }) => {
     const [activePage, setActivePage] = useState(1)
     const [filters, setFilters] = useState({})

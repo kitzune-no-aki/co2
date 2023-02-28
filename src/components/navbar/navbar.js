@@ -3,7 +3,7 @@ import './navbar.css'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
 import {Link} from "react-router-dom";
-
+import Logo from './../../icons/co2cloud.png'
 
 
 const BurgerNav = () => {
@@ -26,6 +26,9 @@ const BurgerNav = () => {
         <div className='navbar'>
             <div className={style}>
                 <div className='left'>
+                    <a href='https://www.co2online.de/klima-schuetzen/klimawandel/was-ist-co2/' target="_blank" >
+                        <img src={Logo}/>
+                    </a>
                     <Link to="/"><h2>CO<span>2</span></h2></Link>
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
